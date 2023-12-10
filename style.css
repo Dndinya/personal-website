@@ -52,6 +52,7 @@
 .hero_desc {
     font-size: 2rem;
     color: #FF0101;
+    text-align:right;
 
 }
 .hero_text {
@@ -135,4 +136,7 @@ html{
 #footer {
     background-color: #808080;
     text-align: center;
+}
+.logos{
+    font-size:48px;
 }
