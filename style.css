@@ -51,6 +51,8 @@
 }
 .hero_desc {
     font-size: 2rem;
+    color: #FF0101;
+
 }
 .hero_text {
     text-align: center;
@@ -105,10 +107,15 @@ html{
     text-align: center;
 }
 .card:hover {
-    color: #008000;
+    color: #FF0101;
 }
 .card:hover {
-    border: 1px solid #008000;
+    border: 1px solid #FF0101;
+.servicesIcon {
+        font-size: 36px;
+        text-align: center;
+        width: 100%;
+    }
 }
 .social-icons {
     font-size: 36px;
