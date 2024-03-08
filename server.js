@@ -1,16 +1,31 @@
-// Load HTTP module
-const http = require("http");
+const express = require('express');
+const bodyParser = require('body-parser');
 
-const hostname = "127.0.0.1";
-const port = 5501;
+const app = express();
+const port = 3000;
 
-// Create HTTP server
-const server = http.createServer(function (req, res) {
-  // Set the response HTTP header with HTTP status and Content type
-  res.writeHead(5501, { "Content-Type": "text/plain" });
+// Middleware to parse form data
+app.use(bodyParser.urlencoded({ extended: true }));
 
-  // Send the response body 
-  res.end("Form Submitted succesfully\n");
+// Serve static files (like HTML and CSS) from the 'public' directory
+app.use(express.static('public'));
+
+// Handle form submissions
+app.post('/submit-form', (req, res) => {
+  const { name, email, message } = req.body;
+
+  // Here you can add logic to handle the form data (e.g., save it to a database)
+  // For simplicity, let's just log the data to the console
+  console.log(`Name: ${name}`);
+  console.log(`Email: ${email}`);
+  console.log(`Message: ${message}`);
+
+  // You can send a response back to the client if needed
+  res.send('Form submission successful!');
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
 });
 
 // Prints a log once the server starts listening
