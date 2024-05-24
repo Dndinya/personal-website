@@ -9,6 +9,7 @@ body{
     padding-bottom: 4rem;
 }
 
+
 .navList {
     list-style-type: none;
     margin: 0;
@@ -40,6 +41,7 @@ body{
   .bgimage {
     height:100vh;
     background: url('/assets/Add\ a\ heading.png');
+    background-color: #322D2A;
     background-size:cover;
     background-blend-mode: lighten;
     position:relative;
@@ -68,6 +70,7 @@ body{
 }
 html{
     scroll-behavior: smooth;
+    color:#322D2A  ;
 }
 /* Float four columns side by side */
 .column {
@@ -137,7 +140,7 @@ html{
 }
 /* footer styling */
 #footer {
-    background-color: #808080;
+    /* background-color: #808080; */
     text-align: center;
 }
 .logos{
