@@ -35,7 +35,7 @@ body{
   
   /* Change the link color to #111 (black) on hover */
   li a:hover {
-    background-color: #020202;
+    background-color: #E11B1B;
   }
 
   .bgimage {
@@ -47,6 +47,8 @@ body{
     position:relative;
     padding: 0;
     margin: 0;
+    max-width: 100%;
+    /* height: auto; */
 }
  
   .hero_title {
@@ -56,7 +58,7 @@ body{
 }
 .hero_desc {
     font-size: 2rem;
-    color: #FF0101;
+    color: #E11B1B;
     text-align:right;
 
 }
@@ -104,7 +106,7 @@ html{
     padding: 16px;
     text-align: center;
     background-color: #f1f1f1;
-    height: 280px;
+    height: 300px;
     cursor: pointer;
   }
   .card-title {
@@ -114,10 +116,10 @@ html{
     text-align: center;
 }
 .card:hover {
-    color: #FF0101;
+    color: #E11B1B;
 }
 .card:hover {
-    border: 1px solid #FF0101;
+    border: 1px solid #E11B1B;
 .servicesIcon {
         font-size: 36px;
         text-align: center;
@@ -211,7 +213,7 @@ button {
   display: inline-block;
   width: 100%;
   padding: 15px;
-  background-color: #007bff;
+  background-color: #E11B1B;
   color: white;
   border: none;
   border-radius: 5px;
@@ -221,5 +223,33 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #E11B1B;
+}
+
+.cv-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  margin: 20px 0;
+}
+
+.cv-section h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cv-download-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: white;
+  background-color: #E11B1B;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cv-download-btn:hover {
+  background-color: #E11B1B;
 }
