@@ -16,9 +16,9 @@ body{
     padding: 0;
     overflow: hidden;
     background-color: #322D2A;
-    /*position: fixed;*/
-    top: 0;
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
   }
   
   li {
@@ -45,10 +45,42 @@ body{
     background-size:cover;
     background-blend-mode: lighten;
     position:relative;
-    padding: 0;
-    margin: 0;
+    /* padding: 0;
+    margin: 0; */
     max-width: 100%;
     /* height: auto; */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .navList {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li {
+    float: none;
+    width: 100%;
+  }
+
+  li a {
+    text-align: left;
+    padding: 10px 16px;
+  }
+
+  .section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
+
+  .section:last-of-type {
+    padding-bottom: 2rem;
+  }
+
+  .bgimage {
+    height: auto;
+    min-height: 50vh;
+  }
 }
  
   .hero_title {
