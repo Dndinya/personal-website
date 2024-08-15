@@ -3,7 +3,8 @@
     padding-top: 4rem;
 }
 body{
-  color:#322D2A ;
+  color:black ;
+  margin: 0;
 }
 .section:last-of-type {
     padding-bottom: 4rem;
@@ -15,7 +16,7 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #322D2A;
+    background-color: black;
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -40,15 +41,15 @@ body{
 
   .bgimage {
     height:100vh;
-    background: url('/assets/Add\ a\ heading.png');
-    background-color: #322D2A;
+    background: url('/assets/0fficial2.png');
+    background-color:black;
     background-size:cover;
     background-blend-mode: lighten;
     position:relative;
     /* padding: 0;
     margin: 0; */
     max-width: 100%;
-    /* height: auto; */
+   
 }
 
 /* Media Queries for Responsiveness */
@@ -91,20 +92,30 @@ body{
 .hero_desc {
     font-size: 2rem;
     color: #E11B1B;
-    text-align:right;
+    font: The seasons;
+    /* text-align:right; */
 
 }
 .hero_text {
-    text-align: center;
+    text-align: left;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    /* top: 0%; */
+    /* left: 12%; */
     transform: translate(-50%, -50%);
     color: rgb(253, 248, 248);
+    opacity: 0;
+    transform: translateX(-100%); /* Start from left off-screen */
+    animation: fadeInLeft 2s ease-out forwards;
+}
+@keyframes fadeInLeft {
+  to {
+      opacity: 1;
+      transform: translateX(0); /* Move to original position */
+  }
 }
 html{
     scroll-behavior: smooth;
-    color:#322D2A  ;
+    color:black  ;
 }
 /* Float four columns side by side */
 .column {

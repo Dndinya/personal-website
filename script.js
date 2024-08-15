@@ -1,3 +1,8 @@
+window.addEventListener('load', function() {
+  const content = document.querySelector('.content');
+  content.style.opacity = '1';
+});
+
 function myFunction() {
     document.getElementById("contactForm").submit();
   }
